@@ -6,10 +6,10 @@ import './Layout.css';
 function Layout({ haeaderElements, children }) {
   return (
     <div data-testid="layout" className="Layout">
-      <Header className="Layout-header">
+      <Header className="layout-header">
         {haeaderElements}
       </Header>
-      <main>{children}</main>
+      <main className="layout-content">{children}</main>
       <Footer />
     </div>
   );
